@@ -1,5 +1,5 @@
 FROM python:3.9
-ADD serviceB.tar /home/
+ADD . /home/serviceB/
 WORKDIR /home/serviceB
 RUN pip install -r package.txt
 EXPOSE 8000
