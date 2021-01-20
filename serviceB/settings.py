@@ -134,7 +134,8 @@ DATABASES = {
         'NAME': 'accounts',
         'USER': 'root',         # 数据库用户名
         'PASSWORD': '123456',     # 密码
-        'HOST': '10.108.6.19',    # 主机
+        #'HOST': '10.108.6.19',    # 主机
+        'HOST': os.getenv('MYSQL_HOST_ADDRESS', '10.108.6.19')
         'PORT': '3306',         # 数据库使用的端口
         }
     }
